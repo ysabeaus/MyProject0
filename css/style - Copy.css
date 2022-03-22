@@ -234,11 +234,7 @@ footer a:hover{
 
 .shop-item-price {
     flex-grow: 1;
-    text-align: center;
-    background-color: var(--pink)!important;
-    border: 2px solid var(--pink);
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
+    color: #333;
 }
 
 .shop-items {
