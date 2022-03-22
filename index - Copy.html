@@ -20,15 +20,21 @@
 
   <body>
     <!--HEADER-->
-    <header>
+    <header class="main-header">
+      <!--NAVIGATION-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light rounded fixed-top">
-        <div class="container">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+            <img src="img/shopping-bag-icon.png" alt="site icon">
+            <span class="text-uppercase fw-lighter ms-2">BRAND NAME</span>
+          </a>
+          <!--NavBar-->
           <div class="navbar-header">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarMenu">
               <i class="fa fa-bars"></i>
-            </button>
+            </button> 
           </div>
-                    <!--Toggle Content-->
+          <!--Toggle Content-->
           <div class="collapse navbar-collapse order-lg-1" id="navbarMenu">
             <ul class="nav navbar-nav mx-auto text-center">
               <li class="nav-item active">
@@ -40,57 +46,153 @@
               <li class="nav-item">
                 <a class="nav-link" href="login.html">Login</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Create an Account</a>
+              </li>
             </ul>
           </div>
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          <!--Cart, logout-->
+          <div class="order-lg-2 nav-btns">
+            <a href="cart.html" class="btn position-relative">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
             </a>
-
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-              <li>
-                <a href="index.html" class="nav-link text-secondary">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                  Home
-                </a>
-              </li>           
-              <li>
-                <a href="cart.html" class="btn position-relative">
-                  <i class="fa fa-shopping-cart"></i>
-                  <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
-                </a>
-              </li>              
-            </ul>
-
-            <div class="dropdown text-end">
-              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-              </a>
-              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                <li><a class="dropdown-item" href="cart.html">My Cart</a></li>
-                <li><a class="dropdown-item" href="#">My Orders</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Logout?</a></li>
-              </ul>
-            </div>
+            <button class="btn position-relative" type="submit">Logout?
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+            </button>
           </div>
         </div>
       </nav>
-      <div class="px-3 py-2 border-bottom mb-3">
-        <div class="container d-flex flex-wrap justify-content-center">
-          <div class="text-end">
-            <button class="btn position-relative" type="button">Login
-              <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
-            </button>
-            <button class="btn position-relative" type="button">Create Account
-              <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
-            </button>
+    </header>
+    <!--END HEADER-->
+    <!--COLLECTION-->
+    <section id="collection" class="py-5">
+      <div class="container">
+        <div class="special-list row g-0">
+          <!--ITEMS FOR SALE-->
+          <div class="collection-list mt-4 row gx-0 gy-3">
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="img/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-primary btn-rounded shop-item-button" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="img/lemon.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Lemon</p>
+                <button type="button" class="btn btn-primary btn-rounded shop-item-button" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="img/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="img/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="img/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="img/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="img/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="img/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-    </header>
-    <!--END HEADER-->
+    </section>
+    <section class="container content-section">
+      <h2 class="section-header">Cart</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+
+      </div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">Purchase</button>
+    </section>    
+
+    <!--FOOTER-->
+    <footer class="text-center text-lg-start bg-dark py-5 text-muted">
+      <!--section top-->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+
+        </div>
+      </section>
+      <!--copyright-->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright
+      </div>
+    </footer>
 
 
 
@@ -103,6 +205,7 @@
     <script src = "node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--CUSTOM JS-->
     <script src = "js/script.js"></script>
+    <script src="js/store.js"></script>
 
   </body>
 </html>
