@@ -75,10 +75,10 @@ body{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
-/* header */
-#header{
+header
+/* #header{
     background: url(../images/banner-img-1.jpg) top/cover no-repeat;
-}
+} */
 .carousel-inner h1{
     font-size: 60px;
     font-family: var(--lg-font);
@@ -113,7 +113,7 @@ body{
 .filter-button-group .btn:hover{
     color: #fff!important;
 }
-.collection-img span{
+.shop-item-image span{
     top: 20px;
     right: 20px;
     width: 46px;
@@ -122,70 +122,27 @@ body{
 }
 
 /* special */
-.special-img span{
+.shop-item-image span{
     top: 20px;
     right: 20px;
 }
-.special-list .btn{
+.shop-items .btn{
     padding: 8px 20px!important;
 }
-.special-img img{
+.shop-item img{
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.special-img:hover img{
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+.shop-item:hover img{
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
 }
 
-/* offers */
-#offers{
-    background: url(../images/offer_img.jpg) center/cover no-repeat;
-}
-#offers .row{
-    min-height: 60vh;
-}
-.offers-content span{
-    font-size: 28px;
-}
-.offers-content h2{
-    font-size: 60px;
-    font-family: var(--lg-font);
-}
-.offers-content .btn{
-    border-color: transparent!important;
-}
 
-/* about */
-#about{
-    background-color: rgba(179, 179, 179, 0.05);
-}
 
-/* newsletter */
-#newsletter{
-    background-color: rgba(179, 179, 179, 0.05);
-}
-#newsletter p{
-    max-width: 600px;
-}
-#newsletter .input-group{
-    max-width: 500px;
-}
-#newsletter .form-control{
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
-#newsletter .btn{
-    background-color: var(--pink);
-    color: #fff;
-    border-color: var(--pink);
-}
-#newsletter .btn:hover{
-    background-color: #000;
-    border-color: #000;
-}
+
 
 /* footer */
 footer .brand{
@@ -218,18 +175,23 @@ footer a:hover{
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-    color: #333;
+    color: var(--pink);
     margin-bottom: 15px;
 }
 
 .shop-item-image {
-    height: 250px;
+    height: 550px;
+    width: auto;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px;
 }
 
 .shop-item-details {
     display: flex;
     align-items: center;
     padding: 5px;
+    position: relative;
 }
 
 .shop-item-price {
@@ -250,7 +212,7 @@ footer a:hover{
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
+    color: var(--pink);
 }
 
 .cart-column {
@@ -273,7 +235,7 @@ footer a:hover{
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: #333;
+    color: var(--pink);
 }
 
 .cart-quantity {
@@ -281,7 +243,7 @@ footer a:hover{
 }
 
 .cart-item-title {
-    color: #333;
+    color: var(--bs-purple);
     margin-left: .5em;
     font-size: 1.2em;
 }
@@ -327,7 +289,7 @@ footer a:hover{
 }
 
 .cart-total-price {
-    color: #333;
+    color: var(--pink);
     font-size: 1.1em;
 }
 
