@@ -47,7 +47,7 @@
     </ul>
     <!--pills content-->
     <div class="tab-content">
-      <div class="tab-panel fade show active" id="pills-login" role="tabpanel" aria-lavelledby="tab-login">
+      <div class="tab-pane fade show active" id="pills-login" role="tab" aria-lavelledby="tab-login">
         <form>
           <div class="text-center mb-3">
             <p> Sign in to your account:</p>
@@ -82,12 +82,12 @@
 
             <!--register buttons-->
             <div class="text-center">
-              <p>Don't have an account? <a href="#!">Register</a></p>
+              <p>Don't have an account? Register Now</p>
             </div>
           </div>
         </form>
       </div>
-      <div class="tab-panel fade" id="pills-register" role="tabpanel" aria-lavelledby="tab-register">
+      <div class="tab-pane fade" id="pills-register" role="tab" aria-labelledby="tab-register">
         <form>
           <div class="text-center mb-3">
             <p> Register an account:</p>
@@ -95,22 +95,22 @@
             <!--name input-->
             <div class="form-outline mb-4">
               <input type="text" id="registerName" class="form-control">
-              <lavel class="form-label" for="registerName">Name</lavel>
+              <label class="form-label" for="registerName">Name</label>
             </div>
             <!--email input-->
             <div class="form-outline mb-4">
               <input type="email" id="registerEmail" class="form-control">
-              <lavel class="form-label" for="registerEmail">Email</lavel>
+              <label class="form-label" for="registerEmail">Email</label>
             </div>          
             <!--password input-->
             <div class="form-outline mb-4">
               <input type="password" id="registerPassword" class="form-control">
-              <lavel class="form-label" for="registerPassword">Password</lavel>
+              <label class="form-label" for="registerPassword">Password</label>
             </div>
             <!--password input repeat-->
             <div class="form-outline mb-4">
               <input type="password" id="registerRepeatPassword" class="form-control">
-              <lavel class="form-label" for="registerRepeatPassword">Repeart Password</lavel>
+              <label class="form-label" for="registerRepeatPassword">Repeat Password</label>
             </div>   
             
             <!--checkbox-->
@@ -126,5 +126,7 @@
         </form>
       </div>
     </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
